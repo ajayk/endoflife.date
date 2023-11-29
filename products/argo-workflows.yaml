@@ -1,0 +1,44 @@
+---
+title: Argo Workflows
+category: server-app
+tags: cncf
+iconSlug: argo
+permalink: /argo-workflows
+alternate_urls:
+-   /argo-workflows
+versionCommand: argo version
+releasePolicyLink: https://github.com/argoproj/argo-workflows/security/policy#supported-versions
+changelogTemplate: https://github.com/argoproj/argo-workflows/releases/tag/v__LATEST__
+releaseDateColumn: true
+eolColumn: Support
+
+auto:
+-   git: https://github.com/argoproj/argo-workflows
+
+
+# eol(X) = releaseDate(X+2)
+releases:
+-   releaseCycle: "3.5.2"
+    releaseDate: 2023-11-27
+    eol: false
+    latest: "3.5.2"
+    latestReleaseDate: 2023-11-27
+
+-   releaseCycle: "3.4.14"
+    releaseDate: 2023-08-07
+    eol: false
+    latest: "3.4.14"
+    latestReleaseDate: 2023-11-27
+
+
+---
+
+> [Argo CD](https://argo-cd.readthedocs.io) is a declarative, GitOps continuous delivery tool for Kubernetes.
+
+Only the three most recent minor versions are eligible for patch releases.
+Versions older than the three most recent minor versions are considered End-of-Life
+and do not receive bug fixes or security updates.
+
+## [Release Cadence](https://argo-cd.readthedocs.io/en/stable/developer-guide/release-process-and-cadence/)
+
+A minor release occurs four times a year, once every three months. Patch releases occur on an as-needed basis.
